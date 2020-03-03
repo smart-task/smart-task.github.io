@@ -140,7 +140,7 @@
         color: #BDBDBD;
       }
 
-      #body #sidebar #download #description {
+      #body #sidebar #download #description  {
         font-size: 1em;
         text-rendering: optimizeLegibility;
         font-family: "Fira Sans";
@@ -171,6 +171,15 @@
       }
 
       #body #content #abstract #description {
+        text-align: justify;
+        text-rendering: optimizeLegibility;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        padding: 0.7em;
+        /*      font-weight: 300;*/
+      }
+
+      #body #content #example #exdescription {
         text-align: justify;
         text-rendering: optimizeLegibility;
         font-size: 1.2em;
@@ -470,24 +479,17 @@ LC-QuAD
 
         <!-- Abstract -->
         <div class="ui padded basic segment" id="abstract">
-
-<!--          <h2 class="ui header"><span id="funny">༼ つ ◕_◕ ༽つ</span></h2>-->
           <h2 class="ui header">Task Description</h2>
           <div id="description">
-
             SMART task is a dataset for the answer type prediction task. Given a question in natural language, the task is to predict type of the answer using a set of candidates from a target ontology. Currently, the target onologies include <a href="https://wiki.dbpedia.org/develop/datasets/dbpedia-version-2016-10">DBpedia</a> and <a href="https://www.wikidata.org/">Wikidata</a>.
-
           </div>
-
         </div>
 
         <div class="ui padded basic segment" id="example">
-
-          <!--          <h2 class="ui header"><span id="funny">༼ つ ◕_◕ ༽つ</span></h2>-->
           <h2 class="ui header">Example Questions and Answer Types</h2>
-          <div id="example-desc">
-
-            The following table illustrates some example questions and expected answer types from DBpedia ontology and Wikidata ontology.
+            <div id="exdescription" >
+              The following table illustrates some example questions and expected answer types from DBpedia ontology and Wikidata ontology.
+            </div>
             <div class="ui padded basic segment">
               <table class="ui celled unstackable table">
                 <thead>
@@ -524,9 +526,6 @@ LC-QuAD
                 </tbody>
               </table>
             </div>
-
-          </div>
-
         </div>
 
         <div class="ui padded basic segment" id="evaluation">
@@ -760,7 +759,7 @@ LC-QuAD
 
               <div class="twelve wide column">
 
-                The SMART task dataset is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+                The SMART dataset is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
               </div>
             </div>
 
