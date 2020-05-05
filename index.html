@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Scope+One|Roboto+Condensed:300,400,700|Inconsolata" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono:300,400|Fira+Sans+Condensed|Fira+Sans:300,400,500,600,700,800" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+
 
     <!-- Site Properties -->
     <title>SMART Task | SeMantic AnsweR Type prediction task </title>
@@ -524,12 +527,39 @@ LC-QuAD
                 </tr>
                 <tr>
                   <td>How many employees does IBM have?</td>
-                  <td class="center aligned">xsd:integer</td>
-                  <td class="center aligned">xsd:integer</td>
+                  <td class="center aligned">number</td>
+                  <td class="center aligned">number</td>
                 </tr>
                 </tbody>
               </table>
             </div>
+        </div>
+
+        <div class="ui padded basic segment" id="dataset">
+
+          <!--          <h2 class="ui header"><span id="funny">༼ つ ◕_◕ ༽つ</span></h2>-->
+          <h2 class="ui header">Dataset</h2>
+          <div id="dataset-desc">
+            We provide two datasets for this task, one using the DBpedia ontology and the other using the Wikidata ontology. Both follow the structure shown below.
+        <pre style="background-color: seashell"><code>
+    [{
+      "id": "dbpedia_14427",
+      "question": "What are some gymnasts coached by Amanda Reddin?",
+      "category": "resource",
+      "type": [ "dbo:Gymnast", "dbo:Athlete", "dbo:Person", "dbo:Agent" ]
+    }, {
+      "id": "dbpedia_16615",
+      "question": "When did Lena Horne receive the Grammy Award for Best Jazz Vocal Album?",
+      "category": "literal",
+      "type": [ "date" ]
+    }, {
+      "id": "dbpedia_23480",
+      "question": "Is Azerbaijan the membership of European Go Federation?",
+      "category": "boolean",
+      "type": ["boolean"]
+    }]
+        </code></pre>
+          </div>
         </div>
 
         <div class="ui padded basic segment" id="evaluation">
