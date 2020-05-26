@@ -597,12 +597,11 @@ LC-QuAD
             answer category and answer type. Answer category can be either "resource", "literal" or "boolean". <p/>
 
             <p>If answer category is "resource", the answer type should be an ontology class (DBpedia or Wikidata, depending on the dataset). The systems
-            should predict the most specific class ("dbo:Gymnast" vs "dbo:Agent") for the highest score. Correct but a more generic
-            classes will receive a lower score <p/>
+            could predict a ranked list of classes from the corresponding ontology. If answer category is "literal", the answer type can be either "number", "date" or "string".</p>
 
-            <p>If answer category is "literal", the answer type can be either "number", "date" or "string".</p>
+            <p>Category predication will be considered as a multi-class classification problem and <b>accuracy score</b> will be used as the metric. For type predication, we will use the metric <b>lenient NDCG@k with a Linear decay</b> from the paper from <a href="https://krisztianbalog.com/files/cikm2012-querytypes.pdf">Balog and Neumayer</a>.</p>
 
-            <p><b>(The concrete evaluation metrics will be published soon).</b></p>
+            <p>We will provide more details on evaluation and the evaluations scripts soon.</p>
 
           </div>
         </div>
