@@ -483,13 +483,15 @@ LC-QuAD
       </div>
 
       <div class="twelve wide column" id="content">
-	<div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> Submission Deadlines are extened by a week as `DBpedia lookup was down`. The new submission deadline is on 28th September 2020. Please refer to the important dates section for the schedule.</div>
+	<!-- 
+  <div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> Submission Deadlines are extened by a week as `DBpedia lookup was down`. The new submission deadline is on 28th September 2020. Please refer to the important dates section for the schedule.</div>
 
 	<div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> Deadlines are extened. The new submission deadline is on 21st September 2020. Please refer to the important dates section for the schedule.</div>
 	
 	<div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> A slack channel is available for any questions/discussions. Please send an email to <a class="underline" href="mailto:nandana.m@ibm.com?Subject=SMART-task-slack" target="_top"><em>nandana.m[at]ibm.com</em></a> get an invitation.  </div>
 	
 	<div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> Test data and evaluation scripts are now available in GitHub </div>
+  -->
 	      
         <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span>Due to Covid-19, ISWC 2020 has decided to <a href="https://iswc2020.semanticweb.org/">go virtual</a>. The SMART Task Challenge will also take place virtually.</div>
 
@@ -504,6 +506,248 @@ LC-QuAD
             In this challenge, given a question in natural language, the task is to predict type of the answer using a set of candidates from a target ontology.</p>
           </div>
         </div>
+
+
+
+
+
+<!-- Leaderboard -->
+        
+        <!-- Leaderboard -->
+        <div class="ui basic padded segment" id="leaderboard">
+
+          <h2 class="ui header">Leaderboard</h2>
+
+          <h3>SMART - DBpedia dataset</h3>
+
+          <table class="ui celled unstackable table">
+            <thead>
+              <tr>
+                <th class="center aligned multi line">System</th>
+                <th class="center aligned single line">Accuracy</th>
+                <th class="center aligned">NDCG@5</th>
+                <th class="center aligned">NDCG@10</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center aligned" id="System">
+                  Setty et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.98
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.80
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.79
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center aligned" id="System">
+                  Perevalov et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.98
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.76
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.73
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center aligned" id="System">
+                  Nikas et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.96
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.78
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.76
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center aligned" id="System">
+                  Kertkeidkachorn et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.96
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.75
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.72
+                </td>
+              </tr>
+
+
+              <tr>
+                <td class="center aligned" id="System">
+                  Ammar et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.94
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.62
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.61
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center aligned" id="System">
+                  Vallurupalli et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.88
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.54
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.52
+                </td>
+              </tr>
+              <tr>
+                <td class="center aligned" id="System">
+                  Bill et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.79
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.31
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.30
+                </td>
+              </tr>
+
+              <tr>
+                <td class="center aligned" id="System">
+                  Steinmetz et al
+                </td>
+                <td class="center aligned" id="Accuracy">
+                  0.74
+                </td>
+                <td class="center aligned" id="NDCG@5">
+                  0.54
+                </td>
+                <td class="center aligned" id="NDCG@10">
+                  0.52
+                </td>
+              </tr>
+            
+            </tbody>
+          </table>
+
+          <h3>SMART - Wikidata dataset</h3>
+
+          <table class="ui celled unstackable table">
+            <thead>
+            <tr>
+              <th class="center aligned multi line">System</th>
+                <th class="center aligned single line">Accuracy</th>
+                <th class="center aligned">MRR</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="center aligned" id="System">
+                Setty et al
+              </td>
+              <td class="center aligned" id="Accuracy">
+                0.97
+              </td>
+              <td class="center aligned" id="MRR">
+                0.68
+              </td>
+            </tr>
+
+             <tr>
+              <td class="center aligned" id="System">
+                Kertkeidkachorn et al
+              </td>
+              <td class="center aligned" id="Accuracy">
+                0.96
+              </td>
+              <td class="center aligned" id="MRR">
+                0.59
+              </td>
+            </tr>
+
+             <tr>
+              <td class="center aligned" id="System">
+                Vallurupalli et al
+              </td>
+              <td class="center aligned" id="Accuracy">
+                0.85
+              </td>
+              <td class="center aligned" id="MRR">
+                0.40
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <h3>References</h3>
+          <div id="partipant">
+            [1] "A Methodology for Hierarchical Classification of Semantic Answer Types of Questions". <br> 
+            <i> Ammar Ammar, Shervin Mehryar, and Remzi Celebi  </i>
+          </div>
+          <div id="partipant">
+            [2] "Question Embeddings for Semantic Answer Type Prediction". <br><i> Eleanor Bill and Ernesto Jiménez-Ruiz </i>
+          </div>
+          <div id="partipant">
+            [3]  "Hierarchical Contextualized RepresentationModels for Answer Type Prediction". <br>
+            <i> Natthawut Kertkeidkachorn, Rungsiman Nararatwong, Phuc Nguyen, Ikuya Yamada, Hideaki Takeda, and Ryutaro Ichise </i>
+          </div>
+          <div id="partipant">
+            [4] "Two-stage Semantic Answer Type Prediction for QA using BERT and Class-Specificity Rewarding". <br>
+            <i> Christos Nikas, Pavlos Fafalios, and Yannis Tzitzikas </i>
+          </div>
+          <div id="partipant">
+            [5]   "Augmentation-based Answer Type Classification of the SMART dataset". <br>
+            <i> Aleksandr Perevalov and Andreas Both </i>
+          </div>
+          <div id="partipant">
+            [6] "Semantic Answer Type Prediction using BERT". <br>
+            <i> Vinay Setty and Krisztian Balog </i>
+          </div>
+          <div id="partipant">
+            [7]  "COALA:A Rule-Based Approach to Answer Type Prediction". <br><i> Nadine Steinmetz and Kai-Uwe Sattler  </i>
+          </div>
+          <div id="partipant">
+            [8] "Fine and Ultra-Fine Entity Type Embeddings for Question Answering". <br>
+            <i> Sai Vallurupalli and Jennifer Sleeman </i>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="ui padded basic segment" id="example">
           <h2 class="ui header">Example Questions and Answer Types</h2>
@@ -676,61 +920,7 @@ LC-QuAD
             </tbody>
         </table>
         </div>
-        <!-- Leaderboard -->
-        <div class="ui basic padded segment" id="leaderboard">
-
-          <h2 class="ui header">Leaderboard</h2>
-
-          <h3>SMART - DBpedia dataset</h3>
-
-          <table class="ui celled unstackable table">
-            <thead>
-              <tr>
-                <th class="single line">Rank</th>
-                <th class="center aligned single line">System</th>
-                <th class="center aligned">Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="center aligned" id="rank">
-                  TBD
-                </td>
-                <td class="center aligned" id="system">
-                  TBD
-                </td>
-                <td class="center aligned">
-                  TBD
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>SMART - Wikidata dataset</h3>
-
-          <table class="ui celled unstackable table">
-            <thead>
-            <tr>
-              <th class="single line">Rank</th>
-              <th class="center aligned single line">System</th>
-              <th class="center aligned">Score</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td class="center aligned" id="rank">
-                TBD
-              </td>
-              <td class="center aligned" id="system">
-                TBD
-              </td>
-              <td class="center aligned">
-                TBD
-              </td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+      
 
           <!-- <div id="sidenote"> -->
             <!-- <span id="asterix">*</span> -->
