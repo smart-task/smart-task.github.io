@@ -483,16 +483,10 @@ LC-QuAD
       </div>
 
       <div class="twelve wide column" id="content">
-	<!-- 
-  <div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> Submission Deadlines are extened by a week as `DBpedia lookup was down`. The new submission deadline is on 28th September 2020. Please refer to the important dates section for the schedule.</div>
 
-	<div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> Deadlines are extened. The new submission deadline is on 21st September 2020. Please refer to the important dates section for the schedule.</div>
-	
-	<div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> A slack channel is available for any questions/discussions. Please send an email to <a class="underline" href="mailto:nandana.m@ibm.com?Subject=SMART-task-slack" target="_top"><em>nandana.m[at]ibm.com</em></a> get an invitation.  </div>
-	
-	<div class="alert-box notice"><span style="font-weight: bold">UPDATE: </span> Test data and evaluation scripts are now available in GitHub </div>
-  -->
-	<div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span>The final call for submissions is out in the <a href="https://lists.w3.org/Archives/Public/semantic-web/2020Sep/0042.html">Semantic Web mailing list</a>, <a href="http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=112918&copyownerid=165047">WikiCFP</a>, and <a href="https://forum.dbpedia.org/t/cfp-iswc-2020-challenge-semantic-answer-type-prediction-smart-task/640">DBpedia Forum</a>.</div>
+        <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span> <a href="http://ceur-ws.org/Vol-2774/">Proceedings of the SeMantic AnsweR Type prediction task (SMART) at ISWC 2020 Semantic Web Challenge</a> are now available in CEUR-WS.org.</div>
+
+	    <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span>The final call for submissions is out in the <a href="https://lists.w3.org/Archives/Public/semantic-web/2020Sep/0042.html">Semantic Web mailing list</a>, <a href="http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=112918&copyownerid=165047">WikiCFP</a>, and <a href="https://forum.dbpedia.org/t/cfp-iswc-2020-challenge-semantic-answer-type-prediction-smart-task/640">DBpedia Forum</a>.</div>
 	      
         <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span>Due to Covid-19, ISWC 2020 has decided to <a href="https://iswc2020.semanticweb.org/">go virtual</a>. The SMART Task Challenge will also take place virtually.</div>
 
@@ -506,6 +500,83 @@ LC-QuAD
             <p>
             In this challenge, given a question in natural language, the task is to predict type of the answer using a set of candidates from a target ontology.</p>
           </div>
+        </div>
+
+
+                <!-- Guides -->
+        <div class="ui basic padded segment" id="guide">
+          <h2 class="ui header">Usage</h2>
+
+          <div class="ui top attached tabular menu">
+            <a class="active item" data-tab="first">Cite</a>
+            <a class="item" data-tab="second">Docs</a>
+            <a class="item" data-tab="third">Schema</a>
+            <a class="item" data-tab="fourth">Changelog</a>
+          </div>
+
+          <div class="ui bottom attached active padded tab segment" data-tab="first">
+
+            <div id="cite" class="mono">
+              @article{smarttask2020,<br>
+                <span id="indent">title={{SeMantic AnsweR Type prediction task (SMART) at ISWC 2020 Semantic Web Challenge}},</span><br>
+                <span id="indent">author={Nandana Mihindukulasooriya and Mohnish Dubey and Alfio Gliozzo and Jens Lehmann and Axel-Cyrille Ngonga Ngomo and Ricardo Usbeck},</span><br>
+                <span id="indent">journal={CoRR/arXiv},</span><br>
+                <span id="indent">year={2020},</span><br>
+                <span id="indent">volume={abs/2012.00555},</span><br>
+                <span id="indent">url={https://arxiv.org/abs/2012.00555}</span><br>
+              }
+
+            </div>
+
+          </div>
+
+          <div class="ui bottom attached padded tab segment" data-tab="second">
+
+            <ul class="ui bulleted list">
+              <li>Find the <strong>train</strong> and <strong>test</strong> splits at our <a href="https://github.com/smart-task/smart-dataset/tree/master/datasets">github repo also.</a>.</li>
+              <li>We're in the process of creating a one-click benchmarking process. For the time being, please contact us to report your results.</li>
+            </ul>
+
+          </div>
+
+          <div class="ui bottom attached padded tab segment" data-tab="third">
+            <span class="intro">
+              Every data item in the dataset consists of the following fields:
+            </span><br><br>
+
+            <span>TBD</span>
+
+
+
+          </div>
+
+          <div class="ui bottom attached tab segment" data-tab="fourth">
+            <!--
+<ul class="ui bulleted list">
+<li >
+<h4>  </h4>
+<ul class="ui list">
+<li>Updated public website
+<li>Published train, test splits</li>
+<li> Leaderboard underway</li>
+</ul>
+</li>
+</ul>
+-->
+            <div class="ui accordion">
+              <div class="title active">
+                <i class="dropdown icon"></i>
+                <span class="accordion-title-version">v0.1.0</span> <span class="accordion-title-date">- 01-07-2019</span>
+              </div>
+              <div class="content active">
+                <ul class="transition visible" style="display: block !important;">
+                  <li>[RELEASE] First version of the dataset released with 30,000 datapoints.</li>
+                  <li>lc-quad.sda.tech published </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
 
 
@@ -533,7 +604,7 @@ LC-QuAD
             <tbody>
               <tr>
                 <td class="center aligned" id="System">
-                  Setty et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-02.pdf">Setty et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.98
@@ -548,7 +619,7 @@ LC-QuAD
 
               <tr>
                 <td class="center aligned" id="System">
-                  Nikas et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-03.pdf">Nikas et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.96
@@ -563,7 +634,7 @@ LC-QuAD
 
               <tr>
                 <td class="center aligned" id="System">
-                  Perevalov et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-01.pdf">Perevalov et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.98
@@ -579,7 +650,7 @@ LC-QuAD
 
               <tr>
                 <td class="center aligned" id="System">
-                  Kertkeidkachorn et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-06.pdf">Kertkeidkachorn et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.96
@@ -595,7 +666,7 @@ LC-QuAD
 
               <tr>
                 <td class="center aligned" id="System">
-                  Ammar et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-05.pdf">Ammar et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.94
@@ -610,7 +681,7 @@ LC-QuAD
 
               <tr>
                 <td class="center aligned" id="System">
-                  Vallurupalli et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-07.pdf">Vallurupalli et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.88
@@ -625,7 +696,7 @@ LC-QuAD
 
               <tr>
                 <td class="center aligned" id="System">
-                  Steinmetz et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-04.pdf">Steinmetz et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.74
@@ -640,7 +711,7 @@ LC-QuAD
               
               <tr>
                 <td class="center aligned" id="System">
-                  Bill et al
+                  <a href="http://ceur-ws.org/Vol-2774/paper-08.pdf">Bill et al.</a>
                 </td>
                 <td class="center aligned" id="Accuracy">
                   0.79
@@ -671,7 +742,7 @@ LC-QuAD
             <tbody>
             <tr>
               <td class="center aligned" id="System">
-                Setty et al
+                <a href="http://ceur-ws.org/Vol-2774/paper-02.pdf">Setty et al.</a>
               </td>
               <td class="center aligned" id="Accuracy">
                 0.97
@@ -683,7 +754,7 @@ LC-QuAD
 
              <tr>
               <td class="center aligned" id="System">
-                Kertkeidkachorn et al
+                <a href="http://ceur-ws.org/Vol-2774/paper-06.pdf"> Kertkeidkachorn et al.</a>
               </td>
               <td class="center aligned" id="Accuracy">
                 0.96
@@ -695,7 +766,7 @@ LC-QuAD
 
              <tr>
               <td class="center aligned" id="System">
-                Vallurupalli et al
+                <a href="http://ceur-ws.org/Vol-2774/paper-07.pdf">Vallurupalli et al.</a>
               </td>
               <td class="center aligned" id="Accuracy">
                 0.85
@@ -709,50 +780,37 @@ LC-QuAD
 
           <h3>References</h3>
           <div id="partipant">
-            [1] "A Methodology for Hierarchical Classification of Semantic Answer Types of Questions". <br> 
+            [1] <a href="http://ceur-ws.org/Vol-2774/paper-05.pdf">A Methodology for Hierarchical Classification of Semantic Answer Types of Questions</a> <br>
             <i> Ammar Ammar, Shervin Mehryar, and Remzi Celebi  </i>
           </div>
           <div id="partipant">
-            [2] "Question Embeddings for Semantic Answer Type Prediction". <br><i> Eleanor Bill and Ernesto Jiménez-Ruiz </i>
+            [2] <a href="http://ceur-ws.org/Vol-2774/paper-08.pdf">Question Embeddings for Semantic Answer Type Prediction</a> <br><i> Eleanor Bill and Ernesto Jiménez-Ruiz </i>
           </div>
           <div id="partipant">
-            [3]  "Hierarchical Contextualized RepresentationModels for Answer Type Prediction". <br>
+            [3]  <a href="http://ceur-ws.org/Vol-2774/paper-06.pdf">Hierarchical Contextualized RepresentationModels for Answer Type Prediction</a> <br>
             <i> Natthawut Kertkeidkachorn, Rungsiman Nararatwong, Phuc Nguyen, Ikuya Yamada, Hideaki Takeda, and Ryutaro Ichise </i>
           </div>
           <div id="partipant">
-            [4] "Two-stage Semantic Answer Type Prediction for QA using BERT and Class-Specificity Rewarding". <br>
+            [4] <a href="http://ceur-ws.org/Vol-2774/paper-03.pdf">Two-stage Semantic Answer Type Prediction for QA using BERT and Class-Specificity Rewarding</a> <br>
             <i> Christos Nikas, Pavlos Fafalios, and Yannis Tzitzikas </i>
           </div>
           <div id="partipant">
-            [5]   "Augmentation-based Answer Type Classification of the SMART dataset". <br>
+            [5] <a href="http://ceur-ws.org/Vol-2774/paper-01.pdf">Augmentation-based Answer Type Classification of the SMART dataset</a> <br>
             <i> Aleksandr Perevalov and Andreas Both </i>
           </div>
           <div id="partipant">
-            [6] "Semantic Answer Type Prediction using BERT". <br>
+            [6] <a href="http://ceur-ws.org/Vol-2774/paper-02.pdf">Semantic Answer Type Prediction using BERT: IAI at the ISWC SMART Task 2020</a> <br>
             <i> Vinay Setty and Krisztian Balog </i>
           </div>
           <div id="partipant">
-            [7]  "COALA:A Rule-Based Approach to Answer Type Prediction". <br><i> Nadine Steinmetz and Kai-Uwe Sattler  </i>
+            [7] <a href="http://ceur-ws.org/Vol-2774/paper-04.pdf">COALA - A Rule-Based Approach to Answer Type Prediction</a> <br><i> Nadine Steinmetz and Kai-Uwe Sattler  </i>
           </div>
           <div id="partipant">
-            [8] "Fine and Ultra-Fine Entity Type Embeddings for Question Answering". <br>
-            <i> Sai Vallurupalli and Jennifer Sleeman </i>
+            [8] <a href="http://ceur-ws.org/Vol-2774/paper-07.pdf">Fine and Ultra-Fine Entity Type Embeddings for Question Answering</a> <br>
+            <i> Sai Vallurupalli, Jennifer Sleeman, and  Tim Finin</i>
           </div>
 
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
         <div class="ui padded basic segment" id="example">
           <h2 class="ui header">Example Questions and Answer Types</h2>
@@ -946,80 +1004,6 @@ poster and demo session.</p>
             <!-- We're in the process of automating the benchmarking process, to populate the leaderboard. In the meantime, please get in touch with us at <a class="underline" href="mailto:priyansh.trivedi@uni-bonn.de?Subject=LC-QuAD Benchmarking" target="_top">priyansh.trivedi@uni-bonn.de</a> to add your entry here, and we'll do it manually. -->
 <!--              Apologies for this inconvenience.-->
           <!-- </div> -->
-
-        <!-- Guides -->
-        <div class="ui basic padded segment" id="guide">
-          <h2 class="ui header">Usage</h2>
-
-          <div class="ui top attached tabular menu">
-            <a class="active item" data-tab="first">Docs</a>
-            <a class="item" data-tab="second">Schema</a>
-            <a class="item" data-tab="third">Cite</a>
-            <a class="item" data-tab="fourth">Changelog</a>
-          </div>
-
-          <div class="ui bottom attached active padded tab segment" data-tab="first">
-
-            <ul class="ui bulleted list">
-              <li>Find the <strong>train</strong> and <strong>test</strong> splits at our <a href="https://github.com/smart-task/smart-dataset/tree/master/datasets">github repo also.</a>.</li>
-              <li>We're in the process of creating a one-click benchmarking process. For the time being, please contact us to report your results.</li>
-            </ul>
-
-          </div>
-
-          <div class="ui bottom attached padded tab segment" data-tab="second">
-            <span class="intro">
-              Every data item in the dataset consists of the following fields:
-            </span><br><br>
-
-            <span>TBD</span>
-
-
-
-          </div>
-
-          <div class="ui bottom attached tab segment" data-tab="fourth">
-            <!--
-<ul class="ui bulleted list">
-<li >
-<h4>  </h4>
-<ul class="ui list">
-<li>Updated public website
-<li>Published train, test splits</li>
-<li> Leaderboard underway</li>
-</ul>
-</li>
-</ul>
--->
-            <div class="ui accordion">
-              <div class="title active">
-                <i class="dropdown icon"></i>
-                <span class="accordion-title-version">v0.1.0</span> <span class="accordion-title-date">- 01-07-2019</span>
-              </div>
-              <div class="content active">
-                <ul class="transition visible" style="display: block !important;">
-                  <li>[RELEASE] First version of the dataset released with 30,000 datapoints.</li>
-                  <li>lc-quad.sda.tech published </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="ui bottom attached padded tab segment" data-tab="third">
-
-            <div id="cite" class="mono">
-              @inproceedings{tbd,<br>
-                <span id="indent">title={Title},</span><br>
-                <span id="indent">author={Authors},</span><br>
-                <span id="indent">booktitle={Proceedings of the ...},</span><br>
-                <span id="indent">year={2020},</span><br>
-                <span id="indent">organization={...}</span><br>
-              }
-
-            </div>
-
-          </div>
-        </div>
 
         <div class="ui padded segment" id="people">
 
