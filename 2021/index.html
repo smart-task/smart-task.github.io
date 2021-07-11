@@ -385,9 +385,9 @@
         </div>
 
         <div class="right menu">
-          <a class="item" data-content="SMART 2021" data-position="bottom center" href="../2020/">
+          <a class="item" data-content="SMART 2020" data-position="bottom center" href="../2020/">
             <!--            <i class="big github icon"></i>-->
-            SMART 2021
+            SMART 2020
           </a>
           <a class="item" data-content="Download Paper (arXiv)" data-position="bottom center" href="https://arxiv.org/abs/2012.00555">
             <!--            <i class="big github icon"></i>-->
@@ -487,27 +487,31 @@ LC-QuAD
       </div>
 
       <div class="twelve wide column" id="content">
+        
+         
 
-        <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span> <a href="http://ceur-ws.org/Vol-2774/">Proceedings of the SeMantic AnsweR Type prediction task (SMART) at ISWC 2020 Semantic Web Challenge</a> are now available in CEUR-WS.org.</div>
-
-	    <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span>The final call for submissions is out in the <a href="https://lists.w3.org/Archives/Public/semantic-web/2020Sep/0042.html">Semantic Web mailing list</a>, <a href="http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=112918&copyownerid=165047">WikiCFP</a>, and <a href="https://forum.dbpedia.org/t/cfp-iswc-2020-challenge-semantic-answer-type-prediction-smart-task/640">DBpedia Forum</a>.</div>
+	    
 	      
-        <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span>Due to Covid-19, ISWC 2020 has decided to <a href="https://iswc2020.semanticweb.org/">go virtual</a>. The SMART Task Challenge will also take place virtually.</div>
+        <div class="alert-box notice"><span style="font-weight: bold">NOTICE: </span>Due to Covid-19, ISWC 2021 has decided to <a href="https://iswc2021.semanticweb.org/">go virtual</a>. The SMART Task Challenge will also take place virtually.</div>
 
         <!-- Abstract -->
         <div class="ui padded basic segment" id="abstract">
           <h2 class="ui header">Task Description</h2>
           <div id="description">
-            SMART task is a dataset for the answer type prediction task. Question Answering is a popular task in the field of Natural Language Processing and Information Retrieval, in which, the goal is to answer a natural language question (going beyond the document retrieval). Question or answer type classification plays a key role in question answering. The questions can be generally classified based on Wh-terms (Who, What, When, Where, Which, Whom, Whose, Why). Similarly, the answer type classification is determining the type of the expected answer based on the query. Such answer type classifications in literature are performed as a short-text classification task using a set of coarse-grained types, for instance, either 6 or 50 types with TREC QA task. A granular answer type classification is possible with popular Semantic Web ontologies such as <a href="https://wiki.dbpedia.org/develop/datasets/dbpedia-version-2016-10">DBpedia</a> (~760 classes) and <a href="https://www.wikidata.org/">Wikidata</a> (~50K classes).
+             Question Answering is a popular task in the field of Natural Language Processing and Information Retrieval, in which, the goal is to answer a natural language question (going beyond the document retrieval). Question or answer type classification and relation prediction plays a key role in question answering. The questions can be generally classified based on Wh-terms (Who, What, When, Where, Which, Whom, Whose, Why). A granular answer type classification is possible with popular Semantic Web ontologies such as <a href="https://wiki.dbpedia.org/develop/datasets/dbpedia-version-2016-10">DBpedia</a> (~760 classes) and <a href="https://www.wikidata.org/">Wikidata</a> (~50K classes). On the otherside, relation prediction for question is hard task, some relations are semantically far and sometimes tokens deciding the relations are spreaded across the question.
 
             <p></p>
             <p>
-            In this challenge, given a question in natural language, the task is to predict type of the answer using a set of candidates from a target ontology.</p>
+            In the second itration of SMART challenge, we have two independent tasks:
+            </p>
+            <p>(1.) Given a question in natural language, the task is to predict type of the answer using a set of candidates from a target ontology.</p>
+            <p>(2.) Given a question in natural language, the task is to predict relation to used for identifying the correct answer.</p>
           </div>
         </div>
 
 
                 <!-- Guides -->
+                <!--  
         <div class="ui basic padded segment" id="guide">
           <h2 class="ui header">Usage</h2>
 
@@ -555,7 +559,7 @@ LC-QuAD
           </div>
 
           <div class="ui bottom attached tab segment" data-tab="fourth">
-            <!--
+            <!-- 
 <ul class="ui bulleted list">
 <li >
 <h4>  </h4>
@@ -567,6 +571,7 @@ LC-QuAD
 </li>
 </ul>
 -->
+<!--
             <div class="ui accordion">
               <div class="title active">
                 <i class="dropdown icon"></i>
@@ -583,13 +588,13 @@ LC-QuAD
 
         </div>
 
+-->
 
 
 
-
-<!-- Leaderboard -->
+<!-- Leaderboard 
         
-        <!-- Leaderboard -->
+        
         <div class="ui basic padded segment" id="leaderboard">
 
           <h2 class="ui header">Leaderboard</h2>
@@ -815,11 +820,11 @@ LC-QuAD
           </div>
 
         </div>
-
+-->
         <div class="ui padded basic segment" id="example">
-          <h2 class="ui header">Example Questions and Answer Types</h2>
+          <h2 class="ui header">Example for tasks</h2>
             <div id="exdescription" >
-              The following table illustrates some example questions and expected answer types from DBpedia ontology and Wikidata ontology.
+              Task 1: The following table illustrates some example questions and expected answer types from DBpedia ontology and Wikidata ontology.
             </div>
             <div class="ui padded basic segment">
               <table class="ui celled unstackable table">
@@ -834,11 +839,6 @@ LC-QuAD
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>Who is the heaviest player of the Chicago Bulls?</td>
-                  <td class="center aligned">dbo:BasketballPlayer</td>
-                  <td class="center aligned">wd:Q3665646</td>
-                </tr>
                 <tr>
                   <td>Which languages were influenced by Perl?</td>
                   <td class="center aligned">dbo:ProgrammingLanguage</td>
@@ -857,6 +857,43 @@ LC-QuAD
                 </tbody>
               </table>
             </div>
+
+
+
+            <div id="exdescription" >
+              Task 2: The following table illustrates some example questions and expected relation prediction from DBpedia ontology and Wikidata ontology.
+            </div>
+            <div class="ui padded basic segment">
+              <table class="ui celled unstackable table">
+                <thead>
+                <tr>
+                  <th class="center aligned single line" rowspan="2">Question</th>
+                  <th class="center aligned" colspan="2">Answer Type</th>
+                </tr>
+                <tr>
+                  <th class="center aligned">DBpedia</th>
+                  <th class="center aligned">Wikidata</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Which languages were influenced by Perl?</td>
+                  <td class="center aligned">dbo:influencedBy</td>
+                  <td class="center aligned">wdt:P737</td>
+                </tr>
+                <tr>
+                  <td>Give me all actors starring in movies directed by and starring William Shatner.</td>
+                  <td class="center aligned">dbo:starring, dbo:director</td>
+                  <td class="center aligned">wdt:P161, wdt:P57</td>
+                </tr>
+                <tr>
+                  <td>How many employees does IBM have?</td>
+                  <td class="center aligned">dbo:numberOfEmployees</td>
+                  <td class="center aligned">wdt:P1128</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
         </div>
 
         <div class="ui padded basic segment" id="dataset">
@@ -864,7 +901,7 @@ LC-QuAD
           <!--          <h2 class="ui header"><span id="funny">༼ つ ◕_◕ ༽つ</span></h2>-->
           <h2 class="ui header">Dataset</h2>
           <div id="dataset-desc">
-            <p>We provide two datasets for this task, one using the DBpedia ontology and the other using the Wikidata ontology. Both follow the structure shown below. </p>
+            <p>Task 1: We provide two datasets for this answer prediction task, one using the DBpedia ontology and the other using the Wikidata ontology. Both follow the structure shown below. </p>
             <p>Each question will have a (a) question id, (b) question text in natural language, (c) an answer category ("resource"/"literal"/"boolean"), and (d) answer type.</p>
             <p>If the category is "resource", answer types are ontology classes from either the DBpedia ontology or the Wikidata ontology. If category is "literal", answer types are either "number", "date", or "string". "boolean" answer type.
             If the category is "boolean", answer type is always "boolean".</p>
@@ -898,10 +935,7 @@ LC-QuAD
   ]
         </code></pre>
 
-            <p><b>Dataset statistics:</b> </p>
-            <p>The DBpedia dataset contains 21,964 (train - 17,571, test - 4,393) questions and the Wikidata dataset contains 22,822 (train - 18,251, test - 4,571) questions.</p>
-            <p>DBpedia training set consists of 9,584 resource questions, 2,799 boolean questions, and 5,188 literal (number - 1,634, date - 1,486, string - 2,068) questions. </p>
-            <p>Wikidata training set consists of 11,683 resource questions, 2,139 boolean questions, and 4,429 literal questions.</p>
+           
           </div>
         </div>
 
@@ -933,7 +967,7 @@ are requested to submit a system description that will be included in a
 joint ISWC challenge proceedings volume in CEUR. System descriptions must
 be in English either in PDF or HTML, formatted in the style of LNCS, and no
                 longer than 12 pages. Submissions can be sent via <a class="underline" href="mailto:nandana.m@ibm.com?Subject=SMART-task" target="_top"><em>email</em></a> or through the <a href="https://smart-task-iswc.slack.com/"><em>slack workspace</em></a>. The accepted
-systems will get the opportunity to show their results during the ISWC 2020
+systems will get the opportunity to show their results during the ISWC 2021
 poster and demo session.</p>
           </div>
         </div>
@@ -952,7 +986,7 @@ poster and demo session.</p>
             <tbody>
             <tr>
               <td class="left aligned">
-                06 May 2020
+                15th July 2021
               </td>
               <td class="left aligned">
                 Release of the training set.
@@ -960,7 +994,7 @@ poster and demo session.</p>
             </tr>
             <tr>
               <td class="left aligned">
-                07 September 2020
+                21st August 2021
               </td>
               <td class="left aligned">
                 Release of the test set.
@@ -968,7 +1002,7 @@ poster and demo session.</p>
             </tr>
             <tr>
               <td class="left aligned">
-                28 September 2020
+                28th August 2021
               </td>
               <td class="left aligned">
                 Submission of system output and system description.
@@ -976,7 +1010,7 @@ poster and demo session.</p>
             </tr>
             <tr>
               <td class="left aligned">
-                1 October 2020
+                15th September 2021
               </td>
               <td class="left aligned">
                 Publication of results and notification of Acceptance for Presentation.
@@ -984,7 +1018,7 @@ poster and demo session.</p>
             </tr>
             <tr>
               <td class="left aligned">
-                07 October 2020
+                07 October 2021
               </td>
               <td class="left aligned">
                 Camera-ready submission.
@@ -992,10 +1026,10 @@ poster and demo session.</p>
             </tr>
             <tr>
               <td class="left aligned">
-                2-6 November 2020
+                24-28th October 2021
               </td>
               <td class="left aligned">
-                ISWC Conference
+                ISWC Conference, Visit <a href="https://iswc2021.semanticweb.org"> iswc2021.semanticweb.org</a>
               </td>
             </tr>
             </tbody>
