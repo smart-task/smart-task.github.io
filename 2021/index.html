@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono:300,400|Fira+Sans+Condensed|Fira+Sans:300,400,500,600,700,800" rel="stylesheet">
 
     <!-- Site Properties -->
-    <title>SMART Task 2021 | SeMantic AnsweR Type prediction task </title>
+    <title>SMART Task 2021 | SeMantic AnsweR Type and Relation Prediction prediction task </title>
     <link rel="stylesheet" type="text/css" href="static/semanticui/semantic.min.css">
     <style type="text/css">
       /*System Wide */
@@ -416,7 +416,7 @@ LC-QuAD
 </div>
 -->
           <div id="subtitle">
-            <span class="sp" style="color: #1e70bf; font-weight: bold">S</span>e<span class="sp" style="color: #1e70bf; font-weight: bold">M</span>antic <span class="sp" style="color: #1e70bf; font-weight: bold">A</span>nswe<span class="sp" style="color: #1e70bf; font-weight: bold">R</span> <span class="sp" style="color: #1e70bf; font-weight: bold">T</span>ype prediction task
+            <span class="sp" style="color: #1e70bf; font-weight: bold">S</span>e<span class="sp" style="color: #1e70bf; font-weight: bold">M</span>antic <span class="sp" style="color: #1e70bf; font-weight: bold">A</span>nswer Type and <span class="sp" style="color: #1e70bf; font-weight: bold">R</span>elation Prediction <span class="sp" style="color: #1e70bf; font-weight: bold">T</span>ask
           </div>
         </div>
       </div>
@@ -498,14 +498,22 @@ LC-QuAD
         <div class="ui padded basic segment" id="abstract">
           <h2 class="ui header">Task Description</h2>
           <div id="description">
-             Question Answering is a popular task in the field of Natural Language Processing and Information Retrieval, in which, the goal is to answer a natural language question (going beyond the document retrieval). Question or answer type classification and relation prediction plays a key role in question answering. The questions can be generally classified based on Wh-terms (Who, What, When, Where, Which, Whom, Whose, Why). A granular answer type classification is possible with popular Semantic Web ontologies such as <a href="https://wiki.dbpedia.org/develop/datasets/dbpedia-version-2016-10">DBpedia</a> (~760 classes) and <a href="https://www.wikidata.org/">Wikidata</a> (~50K classes). On the otherside, relation prediction for question is hard task, some relations are semantically far and sometimes tokens deciding the relations are spreaded across the question.
+            Question Answering is a popular task in the field of Natural Language Processing and Information Retrieval,
+            in which, the goal is to answer a natural language question (going beyond the document retrieval). Question
+            or answer type classification and relation prediction plays a key role in question answering. The questions
+            can be generally classified based on Wh-terms (Who, What, When, Where, Which, Whom, Whose, Why). A granular
+            answer type classification is possible with popular Semantic Web ontologies such as <a href="https://wiki.dbpedia.org/develop/datasets/dbpedia-version-2016-10">DBpedia</a> (~760 classes) and <a href="https://www.wikidata.org/">Wikidata</a> (~50K classes).
+            On the other hand, relation prediction for question is a hard task, some relations are semantically far and
+            sometimes tokens deciding the relations are spread across the question, some relations are implicit in text,
+            and there are lexical gaps in relation surface forms and KG property labels.
 
-            <p></p>
             <p>
-            In the second itration of SMART challenge, we have two independent tasks:
+            Thus, in the second iteration of SMART challenge, we have two independent tasks:
             </p>
             <p><em>Task 1 - Answer type prediction:</em> Given a question in natural language, the task is to predict type of the answer using a set of candidates from a target ontology.</p>
             <p><em>Task 2 - Relation set prediction:</em> Given a question in natural language, the task is to predict relation to used for identifying the correct answer.</p>
+
+            The proceedings of the first edition can be found at <a href="http://ceur-ws.org/Vol-2774/">SMART 2020 - CEUR Proceedings</a>.
           </div>
         </div>
 
@@ -900,8 +908,9 @@ LC-QuAD
 
           <!--          <h2 class="ui header"><span id="funny">༼ つ ◕_◕ ༽つ</span></h2>-->
           <h2 class="ui header">Dataset</h2>
+          <h3>Task 1: Answer Type Prediction (SMART-AT2021)</h3>
           <div id="dataset-desc">
-            <p>Task 1: We provide two datasets for this answer prediction task, one using the DBpedia ontology and the other using the Wikidata ontology. Both follow the structure shown below. </p>
+            <p>We provide two datasets for this answer prediction task, one using the DBpedia ontology and the other using the Wikidata ontology. Both follow the structure shown below. </p>
             <p>Each question will have a (a) question id, (b) question text in natural language, (c) an answer category ("resource"/"literal"/"boolean"), and (d) answer type.</p>
             <p>If the category is "resource", answer types are ontology classes from either the DBpedia ontology or the Wikidata ontology. If category is "literal", answer types are either "number", "date", or "string". "boolean" answer type.
             If the category is "boolean", answer type is always "boolean".</p>
@@ -935,6 +944,9 @@ LC-QuAD
   ]
         </code></pre>
 
+            <h3>Task 2: Relation Prediction (SMART-RL2021)</h3>
+
+            <p> To be released soon.</p>
            
           </div>
         </div>
@@ -945,6 +957,7 @@ LC-QuAD
           <!--          <h2 class="ui header"><span id="funny">༼ つ ◕_◕ ༽つ</span></h2>-->
           <h2 class="ui header">Evaluation Metrics</h2>
           <div id="evaluation-metrics-desc">
+            <h3>Task 1: Answer Type Prediction</h3>
             <p>For each natural language question in the test set, the participating systems are expected to provide two predictions:
             answer category and answer type. Answer category can be either "resource", "literal" or "boolean". <p/>
 
@@ -955,6 +968,8 @@ LC-QuAD
 
             <p>We will provide more details on evaluation and the evaluations scripts soon.</p>
 
+            <h3>Task 2: Relation Prediction</h3>
+            <p> Will be added soon.</p>
           </div>
         </div>
 	      
