@@ -425,7 +425,7 @@ LC-QuAD
 
         <div class="ui center aligned basic segment" id="download">
 
-          <a href="https://github.com/smart-task/smart-dataset/tree/master/datasets" class="ui fluid animated large fade primary button" id="downloadbutton">
+          <a href="https://github.com/smart-task/smart-2021-dataset" class="ui fluid animated large fade primary button" id="downloadbutton">
 
             <div class="visible content"><span id="subtext">Dataset</span> Download</div>
             <div class="hidden content">GitHub <i class="external icon"></i></div>
@@ -516,15 +516,20 @@ LC-QuAD
         <div class="ui padded basic segment" id="abstract">
           <h2 class="ui header">Task Description</h2>
           <div id="description">
-            Question Answering is a popular task in the field of Natural Language Processing and Information Retrieval,
-            in which, the goal is to answer a natural language question (going beyond the document retrieval). Question
-            or answer type classification and relation prediction plays a key role in question answering. The questions
-            can be generally classified based on Wh-terms (Who, What, When, Where, Which, Whom, Whose, Why). A granular
+            <p>Knowledge Base Question Answering (KBQA) is a popular task in
+              the field of Natural Language Processing and Information Retrieval,
+              in which the goal is to answer a natural language question using the
+              facts in a Knowledge Base. KBQA can involve several subtasks such as entity linking,
+              relation linking, and answer type prediction. In the SMART 2021 Semantic Web Challenge,
+              we focus on two subtasks in KBQA.</p>
+
+            <p>
+            On one hand, the questions can be generally classified based on Wh-terms (Who, What, When, Where, Which, Whom, Whose, Why). A granular
             answer type classification is possible with popular Semantic Web ontologies such as <a href="https://wiki.dbpedia.org/develop/datasets/dbpedia-version-2016-10">DBpedia</a> (~760 classes) and <a href="https://www.wikidata.org/">Wikidata</a> (~50K classes).
             On the other hand, relation prediction for question is a hard task, some relations are semantically far and
             sometimes tokens deciding the relations are spread across the question, some relations are implicit in text,
-            and there are lexical gaps in relation surface forms and KG property labels.
-
+              and there are lexical gaps in relation surface forms and KG property labels.</p>
+            <br/>
             <p>
             Thus, in the second iteration of SMART challenge, we have two independent tasks:
             </p>
@@ -926,7 +931,7 @@ LC-QuAD
 
           <!--          <h2 class="ui header"><span id="funny">༼ つ ◕_◕ ༽つ</span></h2>-->
           <h2 class="ui header">Dataset</h2>
-          <h3>Task 1: Answer Type Prediction (SMART-AT2021)</h3>
+          <h3>Task 1: Answer Type Prediction (SMART2021-AT)</h3>
           <div id="dataset-desc">
             <p>We provide two datasets for this answer prediction task, one using the DBpedia ontology and the other using the Wikidata ontology. Both follow the structure shown below. </p>
             <p>Each question will have a (a) question id, (b) question text in natural language, (c) an answer category ("resource"/"literal"/"boolean"), and (d) answer type.</p>
@@ -962,8 +967,10 @@ LC-QuAD
   ]
         </code></pre>
 
-            <h3>Task 2: Relation Prediction (SMART-RL2021)</h3>
-
+            <h3>Task 2: Relation Prediction (SMART2021-RL)</h3>
+            <p>Similar to AT, we provide two datasets for the relation prediction task, one using the DBpedia ontology and the other using the Wikidata ontology. Both follow the structure shown below. </p>
+            <p>Each question will have a (a) question id, (b) question text in natural language, (c) a list of relation blocks (n blocks for multihop questions involving n relations). Each relation block can have multiple interchangeable relations.</p>
+            <p>We also provide a restricted vocabulary of all the relations that are used in the dataset (both training and test sets).</p>
             <pre style="background-color: seashell"><code>
 [
   {
