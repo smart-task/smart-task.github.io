@@ -1008,17 +1008,57 @@ LC-QuAD
           <div id="evaluation-metrics-desc">
             <h3>Task 1: Answer Type Prediction</h3>
             <p>For each natural language question in the test set, the participating systems are expected to provide two predictions:
-            answer category and answer type. Answer category can be either "resource", "literal" or "boolean". <p/>
+            answer category and answer type. Answer category can be either "resource", "literal" or "boolean". The format is as the same
+            as the training data.<p/>
 
             <p>If answer category is "resource", the answer type should be an ontology class (DBpedia or Wikidata, depending on the dataset). The systems
             could predict a ranked list of classes from the corresponding ontology. If answer category is "literal", the answer type can be either "number", "date" or "string".</p>
 
             <p>Category predication will be considered as a multi-class classification problem and <b>accuracy score</b> will be used as the metric. For type predication, we will use the metric <b>lenient NDCG@k with a Linear decay</b> from the paper from <a href="https://krisztianbalog.com/files/cikm2012-querytypes.pdf">Balog and Neumayer</a>.</p>
 
-            <p>We will provide more details on evaluation and the evaluations scripts soon.</p>
+            <p>The evaluation scripts can be found <a href="https://github.com/smart-task/smart-2021-dataset">here</a>.</p>
 
             <h3>Task 2: Relation Prediction</h3>
-            <p> Will be added soon.</p>
+            <p> For each question, the participating systems are supposed to provide a list of relations. The format of
+            the expected system output is as follows:</p>
+          <div>
+            <div>
+              For SMART2021-RL-DBpdia. The format is slightly different from the train data. When there is a multiple
+              equally valid relations such as "dbo:locatedInArea", "dbo:isPartOf", "dbo:location", "dbo:region", the
+              participantly are only expected to provide any one of them (not all).
+              <pre style="background-color: seashell"><code>
+[
+  {
+    "id": "smart-2021-rl-dbpedia-test-0",
+    "relations": ["dbo:location"]
+  },
+  {
+    "id": "smart-2021-rl-wikidata-test-1",
+    "relations": ["dbo:award", "dbo:director"]
+  }
+]
+            </code></pre>
+            </div>
+            <div>
+            For SMART2021-RL-Wikidata. The systems are needed to provide the list of relations similar to the training
+              data.
+            <pre style="background-color: seashell"><code>
+[
+  {
+    "id": "smart-2021-rl-wikidata-test-0",
+    "relations": ["P4599"]
+  },
+  {
+    "id": "smart-2021-rl-wikidata-test-1",
+    "relations": ["P166", "P805"]
+  }
+]
+            </code></pre>
+          </div>
+        </div>
+            <p>The list of system predicted relations will be compared with the gold list of relations and <b>precision,
+              recall, and F1</b> metrics will be calculated for all questions. <b>Micro F1</b> will be used to rank the systems.</p>
+            <p>The evaluation scripts can be found <a href="https://github.com/smart-task/smart-2021-dataset">here</a>.</p>
           </div>
         </div>
 	      
@@ -1207,7 +1247,7 @@ poster and demo session.</p>
                 <a class="header" href="https://www.linkedin.com/in/uttam-kumar-b9a87139/?originalSubdomain=de">Uttam Kumar</a>
                 <div class="meta">
                   <a>PhD Student, University of Bonn</a>
-                </div
+                </div>
               </div>
             </div>
 
